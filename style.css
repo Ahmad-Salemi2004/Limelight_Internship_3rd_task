@@ -1,0 +1,117 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding-top: 56px; 
+    line-height: 1.6;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.bg-primary {
+    background-color: #172551 !important;
+}
+
+.btn-primary {
+    background-color: #172551;
+    border-color: #172551;
+}
+
+.btn-primary:hover {
+    background-color: #3a5bbf;
+    border-color: #3a5bbf;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.bi {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4e73df;
+}
+
+.card-body .bi {
+    font-size: 3rem;
+}
+
+.service-card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .card-body {
+    padding: 2rem;
+}
+
+.certification-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.certification-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card img {
+    height: 150px;
+    object-fit: contain;
+    padding: 1rem;
+    background-color: #f8f9fa;
+}
+
+#contactForm .form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+}
+
+.social-icons a {
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.social-icons .bi {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: #172551 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .card-body .bi {
+        font-size: 2rem;
+    }
+}
