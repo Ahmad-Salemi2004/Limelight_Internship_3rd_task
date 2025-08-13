@@ -1,6 +1,6 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    padding-top: 56px; 
+    padding-top: 56px;
     line-height: 1.6;
 }
 
@@ -22,14 +22,13 @@ section {
     border-color: #3a5bbf;
 }
 
-/* Service Cards Styling */
+/* Services Section */
 .service-card {
     border: none;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     overflow: hidden;
-    background: white;
 }
 
 .service-card:hover {
@@ -41,39 +40,40 @@ section {
     width: 80px;
     height: 80px;
     object-fit: contain;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     display: block;
 }
 
-.service-card .card-body {
-    padding: 2rem;
+/* Certifications Section */
+.certifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.service-card h4 {
-    color: #172551;
-    font-weight: 600;
+.certification-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.service-card p {
-    color: #6c757d;
-}
-
-/* Certification Images */
 .certification-img {
-    width: 100%;
-    height: 300px;
+    width: 45%;
+    max-height: 300px;
     object-fit: contain;
-    padding: 10px;
-    background-color: #f8f9fa;
-    transition: transform 0.3s;
-    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 
 .certification-img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Hobby Cards */
+/* Hobbies Section */
 .hobby-icon {
     font-size: 2rem;
     margin-right: 15px;
@@ -89,7 +89,7 @@ section {
     flex: 1;
 }
 
-/* Contact Form */
+/* Contact Section */
 #contactForm .form-control {
     padding: 0.75rem 1rem;
     border-radius: 0.375rem;
@@ -128,12 +128,12 @@ section {
         padding: 60px 0;
     }
     
-    .profile-img {
-        width: 150px;
-        height: 150px;
+    .certification-row {
+        flex-direction: column;
+        gap: 1rem;
     }
     
-    .card-body .bi {
-        font-size: 2rem;
+    .certification-img {
+        width: 100%;
     }
 }
